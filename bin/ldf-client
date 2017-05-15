@@ -3,7 +3,7 @@
 /* Command-line utility to execute SPARQL queries over triple pattern fragments. */
 var fs = require('fs');
 try {
-  fs.unlinkSync('ldfResponse.gz');
+  fs.unlinkSync('ldfResponse');
 } catch(e) {
   //doesnt exist. just ignore
 }
