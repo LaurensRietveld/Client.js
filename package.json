@@ -40,6 +40,7 @@
     "xml": ">=1.0.0"
   },
   "devDependencies": {
+    "browserify": "^14.3.0",
     "chai": "^3.5.0",
     "eslint": "^3.9.1",
     "jsdoc": "^3.4.2",
