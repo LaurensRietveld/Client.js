@@ -1,7 +1,12 @@
 #!/usr/bin/env node
 /*! @license MIT ©2013-2016 Ruben Verborgh, Ghent University - imec */
 /* Command-line utility to execute SPARQL queries over triple pattern fragments. */
-
+var fs = require('fs');
+try {
+  fs.unlinkSync('ldfResponse.gz');
+} catch(e) {
+  //doesnt exist. just ignore
+}
 var ldf = require('../ldf-client');
 
 // Retrieve and check arguments
